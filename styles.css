@@ -1,0 +1,339 @@
+* 
+{
+    margin: 0; /* pour ne pas mettre d'espaces entre les textes */
+    padding: 0;
+}
+
+body
+ {
+    font: 14px/1.5 Helvetica,sans-serif;
+    background: url(stars.jpg) repeat;
+
+}
+
+div.wrap 
+{
+    width: 960px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+section 
+{
+    display: block;
+	position:relative;
+}
+
+header h1 
+{
+    font-size: 100px;
+    line-height: 1; /* pour l'espacement entre les lignes */
+    color: #eee5a2;
+    text-shadow: 5px 5px #32312b;
+    text-align: center;
+}
+
+/* Styles du système solaire */
+ul.systemesolaire
+{
+    position: relative;
+    height: 700px;
+    overflow: hidden; /*débordement */
+}
+
+ul.systemesolaire li 
+{
+    color:transparent;
+    display: block;
+    position: absolute;
+    border: 2px solid #394057; /*couleur du bordure */
+}
+
+ul.systemesolaire li span /*pour modifier la forme du planète */
+ {
+    display: block;
+    position: absolute;
+    width: 12px; /*taille du cercle */
+    height: 12px;
+    border-radius: 6px; /*pour mettre en forme de cercle */
+}
+
+ul.systemesolaire li.soleil
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background: #fc3; /*couleur jaune du soleil */
+    top: 298px;
+    left: 456px;
+    border: none;
+    box-shadow: 0 0 50px #c90;
+}
+
+ul.systemesolaire li.mercure
+ {
+    width: 100px;
+    height: 100px;
+    border-radius: 52px;
+    top: 270px;
+    left: 430px;
+    z-index: 99;
+}
+
+ul.systemesolaire li.mercure span 
+{
+    background: #b6bac5;
+    top: 10px;
+    left: 10px;
+}
+
+ul.systemesolaire li.venus 
+{
+    width: 160px;
+    height: 160px;
+    border-radius: 82px;
+    top: 240px;
+    left: 400px;
+    z-index: 98;
+}
+
+ul.systemesolaire li.venus span
+ {
+    background: #bf8639;
+    top: 118px;
+    left: 5px;
+}
+
+ul.systemesolaire li.terre
+{
+    width: 220px;
+    height: 220px;
+    border-radius: 112px;
+    top: 210px;
+    left: 370px;
+    z-index: 97;
+}
+
+ul.systemesolaire li.terre span 
+{
+    background: #06c;
+    top: 56px;
+    left: 5px;
+}
+
+ul.systemesolaire li.terre span.lune
+{
+    width: 5px;
+    height: 5px;
+    border-radius: 2px;
+    background: #ccc;
+    top: 12px;
+    left: 14px;
+}
+
+ul.systemesolaire li.mars 
+{
+    width: 280px;
+    height: 280px;
+    border-radius: 142px;
+    top: 180px;
+    left: 340px;
+    z-index: 96;
+}
+
+ul.systemesolaire li.mars span
+ {
+    background: #aa4200;
+    top: 0px;
+    left: 175px;
+}
+
+ul.systemesolaire li.asteroids_meteorids
+ {
+    top: 155px;
+    left: 315px;
+    z-index: 1;
+    background: url(asteroids_meteorids.png) no-repeat 0 0;
+    width: 330px;
+    height: 330px;
+    border-radius: 165px;
+    border: none;
+}
+
+ul.systemesolaire li.jupiter 
+{
+    width: 340px;
+    height: 340px;
+    border-radius: 172px;
+    top: 150px;
+    left: 310px;
+    z-index: 95;
+}
+
+ul.systemesolaire li.jupiter span
+ {
+    background: #e0ae6f;
+    top: 67px;
+    left: 24px;
+}
+
+ul.systemesolaire li.saturne
+{
+    width: 400px;
+    height: 400px;
+    border-radius: 202px;
+    top: 120px;
+    left: 280px;
+    z-index: 94;
+}
+
+ul.systemesolaire li.saturne span 
+{
+    background: #dfd3a9;
+    top: 24px;
+    left: 300px;
+}
+
+ul.systemesolaire li.saturne span.ring 
+{
+    width: 12px;
+    height: 12px;
+    border-radius: 8px;
+    background: none;
+    border: 2px solid #5a4e34;
+    left: -3px;
+    top: -3px;
+    transform: skew(50deg);
+}
+
+ul.systemesolaire li.uranus 
+{
+    width: 460px;
+    height: 460px;
+    border-radius: 232px;
+    top: 90px;
+    left: 250px;
+    z-index: 93;
+}
+#titre
+{
+	opacity:0;
+	transition:6s;
+}
+
+ul.systemesolaire li.uranus span 
+{
+    background: #82b3d1;
+    top: 7px;
+    left: 300px;
+}
+
+ul.systemesolaire li.neptune 
+{
+    width: 520px;
+    height: 520px;
+    border-radius: 262px;
+    top: 60px;
+    left: 220px;
+    z-index: 92;
+}
+
+ul.systemesolaire li.neptune span 
+{
+    background: #77c2ec;
+    top: 0px;
+    left: 200px;
+}
+
+ul.systemesolaire li.pluton
+{
+    width: 580px;
+    height: 580px;
+    border-radius: 292px;
+    top: 30px;
+    left: 190px;
+    z-index: 91;
+}
+
+ul.systemesolaire li.pluton span 
+{
+    background: #7c6a5c;
+    top: 79px;
+    left: 79px;
+}
+
+ul#descriptions
+ {
+    position: absolute;
+    top: 150px;
+    right: 70px;
+}
+
+ul#descriptions h2
+ {
+    color: #386077;
+    font-size: 20px;
+    position: relative;
+}
+
+ul#descriptions h2:hover 
+{
+	color: #aa4200; 
+	font-size:1.6em;
+}
+
+ul#descriptions li p
+ {
+    position: absolute;
+    right: -250px;
+    top: 0;
+    width: 200px;
+    display: inline;
+    opacity: 0;
+    font-size: 13px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
+    background: #0f132c;
+    padding: 30px;
+    color: #767892;
+    border: 1px solid #1c203c;
+}
+
+ul#descriptions h2:hover +p 
+{
+    opacity: 0.9;
+    right: -280px;
+}
+
+/* CSS3 Animations */
+ul.systemesolaire li
+ {
+    animation-iteration-count:infinite; /* le nombre de cycles utilisés pour répéter une animation avant que celle-ci s'arrête. */
+    animation-timing-function:linear;
+    animation-name:orbit;
+   
+}
+
+ul.systemesolaire li.terre span 
+{
+	animation-iteration-count:infinite;
+    animation-timing-function:linear;
+    animation-name:moon;
+
+}
+
+ul.systemesolaire li.mercure {animation-duration:5s;}/*La propriété animation-duration définit le nombre de secondes ou de millisecondes que doit durer une animation.
+ La valeur par défaut, 0s, indique qu'il n'y aura aucune animation.*/
+ul.systemesolaire li.venus {animation-duration:8s;}
+ul.systemesolaire li.terre {animation-duration:12s;}
+ul.systemesolaire li.terre span {animation-duration:2s;}
+ul.systemesolaire li.mars {animation-duration:20s;}
+ul.systemesolaire li.asteroids_meteorids {animation-duration:50s;}
+ul.systemesolaire li.jupiter {animation-duration:30s;}
+ul.systemesolaire li.saturne {animation-duration:60s;}
+ul.systemesolaire li.uranus {animation-duration:70s;}
+ul.systemesolaire li.neptune {animation-duration:100s;}
+ul.systemesolaire li.pluton {animation-duration:120s;}
+
+@keyframes orbit { from { transform:rotate(0deg) } to { transform:rotate(360deg) } }
+@keyframes moon { from { transform:rotate(0deg) } to { transform:rotate(360deg) } }
